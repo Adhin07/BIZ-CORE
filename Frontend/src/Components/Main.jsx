@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import  { useRef } from "react";
 import video from "../Assets/home1_video.mp4";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import businessVid from "../Assets/business-growth.webm";
 
-function Home() {
+function Main() {
   const heroRef = useRef(null); // Reference for hero section
   const aboutRef = useRef(null); // Reference for about section
 
@@ -126,4 +126,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Main;

@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import icons
 import SignupModal from "./SignUp";
+
+
 
 const LoginModal = ({ isOpen, onClose }) => {
   const [showPassword, setShowPassword] = useState(false);
@@ -8,7 +10,7 @@ const LoginModal = ({ isOpen, onClose }) => {
 
 
   if (!isOpen) return null; // Prevent rendering if modal is closed
-
+    
   return (
     <div className="  fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
       {/* Modal Box */}
