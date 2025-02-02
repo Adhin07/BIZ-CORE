@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import Logo from "../Assets/logo.webp";
-import Login from "../Components/Login";
 import { FaBars, FaTimes } from "react-icons/fa"; // Import menu icons
+import LoginModal from "../Components/Login";
 
 function Header() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,7 +61,7 @@ function Header() {
       </div>
 
       {/* Login Modal */}
-      <Login isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+     { isModalOpen && <LoginModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />}
     </>
   );
 }

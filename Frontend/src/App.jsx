@@ -1,16 +1,17 @@
 import './App.css'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
-import Home from './Components/Home'
-
+import Main from './Components/Main'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
 
   return (
     <>
     <div className='App'>
+    <Toaster position="top-right" reverseOrder={false} />
       <Header/>
-       <Home/>
+       <Main/>
      <Footer/>
     </div>
     
